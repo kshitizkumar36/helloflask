@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f0f0f0;
+        }
+        form {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #aaa;
+        }
+        input {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<form method="POST" action="/submit">
+    <h2>Login</h2>
+    <input type="text" name="username" placeholder="Enter Username" required>
+    <input type="email" name="email" placeholder="Enter Email" required>
+    <input type="mobile" name="mobile" placeholder="Enter Mobile" required>
+
+    <input type="password" name="password" placeholder="Enter Password" required>
+    <input type="text" name="platform">
+    <button type="submit">Login</button>
+</form>
+
+</body>
+</html>
